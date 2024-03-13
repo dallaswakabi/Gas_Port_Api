@@ -185,15 +185,15 @@ try {
   // const formatter = new Intl.DateTimeFormat('en-US', { dateStyle: 'short' });
   // const formattedDate = formatter.format(date);
    let orderDate = date
-
+   const mysql_PORT = 3306
     console.log({orderDate,amount, number,clientName,clientContact,delivery_staff,
     delivery_status,subTotalValue,vatValue,
    totalAmountValue, discount, grandTotalValue,paid ,dueValue,
    paymentType,paymentStatus,paymentPlace,gstn,userid,username
 })
-   
+
 var con = mysql.createConnection({
-    host: "localhost",
+    host: `${mysql_PORT}`,
     user: "root",
     password: "",
     database: "gas_port"
