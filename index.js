@@ -221,54 +221,6 @@ var con = mysql.createConnection({
 
 
 
- //console.log({amount,number})
-    
-   /*let url = 'https://www.intouchpay.co.rw/api/requestpayment/';
-
-    const authToken = 'randomaccesstoken';
-   // current timestamp in milliseconds
-    const timestamp1 = Date.now();
-
-   const dateObject = new Date(timestamp1);
-   const date = dateObject.getDate();
-   const month = dateObject.getMonth() + 1;
-   const year = dateObject.getFullYear();
-   const hours = dateObject.getHours();
-   const minutes = dateObject.getMinutes();
-   const seconds = dateObject.getSeconds();
-   const timestamp = `${year}${month}${date}${hours}${minutes}${seconds}`
-// prints date & time in YYYY-MM-DD format
-  // const time = Date.now();
-  const passtest= 'testa250160000011pass123456789'+timestamp;
-  const passhash = crypto.createHash("sha256").update(passtest).digest('hex')
-
-
-   
-  try {
-   await axios.post(url,{
-       'username':'testa',
-       'timestamp':timestamp,
-       'amount':amount,
-       'password':passhash,
-       'mobilephone':number,
-       'requesttransactionid':timestamp,
-   },{
-       headers:{
-           "Access-Token":authToken,
-           "Content-Type":"application/json" 
-       }
-   }).then((response)=>{
-       console.log(response)
-       res.status(200).json(response.data)
-   }).catch((err)=>{
-       console.log(err)
-       res.status(400).json(err);
-   })
-  } catch (error) {
-   console.log(error)
-  }
-  */
-
 
  // This was For Create End Point
 
